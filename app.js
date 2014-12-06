@@ -13,7 +13,7 @@ var messages = [
 ];
 
 app.get('/', function (req, res) {
-    res.send('Hello Bitches! Welcome to MotskiBomdeck microBlog');
+    res.send('Endpoint:<br>&nbsp;&nbsp;&nbsp;&nbsp;(GET) /Messages<br>&nbsp;&nbsp;&nbsp;&nbsp;(POST) /Message<br>&nbsp;&nbsp;&nbsp;&nbsp;(DELETE) /Message/:id<br><br>Message Structure:<br>{<br>  username: "Mariov",<br>  text: "Where are you Luigiov?"<br>}');
 });
 
 app.get('/messages', function (req, res) {
