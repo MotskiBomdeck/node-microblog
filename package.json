@@ -1,0 +1,26 @@
+{
+  "name": "node-microblog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "node-tasklist =============",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MotskiBomdeck/node-microblog.git"
+  },
+  "author": "MotskiBomdeck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MotskiBomdeck/node-microblog/issues"
+  },
+  "homepage": "https://github.com/MotskiBomdeck/node-microblog",
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "debug": "^2.1.0",
+    "express": "^4.10.4"
+  }
+}
