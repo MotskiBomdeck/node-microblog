@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/messages', function (req, res) {
-    res.send(messages);
+    res.json(messages);
 });
 
 app.post('/message', function (req, res) {
