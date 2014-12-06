@@ -12,6 +12,13 @@ var messages = [
     {id: 3, username: 'Mariov', text: 'OK!', date: now+5000}
 ];
 
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+});
+
+
 app.get('/', function (req, res) {
     res.send('Hello Bitches! Welcome to MotskiBomdeck microBlog');
 });
@@ -21,8 +28,11 @@ app.get('/messages', function (req, res) {
 });
 
 app.post('/message', function (req, res) {
-    req.body.message.id = currentId++;
-    messages.push(req.body.message);
+    var newMessage = req.body.message;
+
+    newMessage.id = currentId++;
+    newMessage.date = new Date().getTime();
+    messages.push(newMessage);
 
     res.sendStatus(201);
 });
