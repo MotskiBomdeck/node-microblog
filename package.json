@@ -2,8 +2,11 @@
   "name": "node-microblog",
   "version": "1.0.0",
   "private": true,
-  "description": "node-tasklist =============",
-  "main": "index.js",
+  "description": "Simple Micro-Blog REST API",
+  "homepage": "https://github.com/MotskiBomdeck/node-microblog",
+  "author": "MotskiBomdeck",
+  "license": "ISC",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,12 +15,10 @@
     "type": "git",
     "url": "https://github.com/MotskiBomdeck/node-microblog.git"
   },
-  "author": "MotskiBomdeck",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/MotskiBomdeck/node-microblog/issues"
   },
-  "homepage": "https://github.com/MotskiBomdeck/node-microblog",
+  "engine": "node >= 0.10.32",
   "dependencies": {
     "body-parser": "^1.10.0",
     "debug": "^2.1.0",
